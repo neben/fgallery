@@ -93,7 +93,7 @@ sub sys
   my $out = <$fd>;
 
   unless(close($fd)) {
-    fatal("command \"@cmd\" failed");
+    print("command \"@cmd\" failed");
   }
 
   return split("\n", $out);
